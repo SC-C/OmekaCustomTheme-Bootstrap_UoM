@@ -31,7 +31,7 @@
         queue_css_url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     }
     queue_css_file('style');
-    $displayCornerBanner = get_theme_option('Display Corner Banner');
+//    $displayCornerBanner = get_theme_option('Display Corner Banner');
     if ($displayCornerBanner) {
         queue_css_file('corner-banner');
     }
@@ -62,7 +62,7 @@
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
     <?php if ($displayCornerBanner): ?>
     <span id="corner-banner">
-        <em><?php echo $displayCornerBanner; ?></em>
+       <em><?php echo $displayCornerBanner; ?></em>
     </span>
     <?php endif; ?>
     <header id="header" role="banner" class="container">
