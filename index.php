@@ -51,6 +51,9 @@ if (get_theme_option('Display Grid Rotator')):
 endif;
 ?>
 
+
+
+
 <?php $homepageText = get_theme_option('Homepage Text'); ?>
 <?php if ($homepageText): ?>
 <div class="row home-features home-text" id="home-tagline"> <?php // start tagline ?>
