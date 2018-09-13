@@ -80,15 +80,15 @@
         }
     </style>
      
-    <?php
-    if (get_theme_option('Use Internal Bootstrap')) {
-         queue_css_file('bootstrap.min');
-        queue_css_file('font-awesome.min');
-    } else {
-        queue_css_url('//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-        queue_css_url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-    }
-    queue_css_file('style');
+   // <?php
+   // if (get_theme_option('Use Internal Bootstrap')) {
+   //      queue_css_file('bootstrap.min');
+   //     queue_css_file('font-awesome.min');
+   // } else {
+   //     queue_css_url('//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+   //     queue_css_url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+   // }
+   // queue_css_file('style');
     
     $displayCornerBanner = get_theme_option('Display Corner Banner');
     if ($displayCornerBanner) {
