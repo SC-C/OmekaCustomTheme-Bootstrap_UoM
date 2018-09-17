@@ -1,0 +1,70 @@
+            <!--Header Container-->
+            <header class="headerContainer">                
+                <!--Header Content-->
+                              <div class="headerContent clearfix ">                    
+                    <div class="mainLogo">
+                    <a href="http://www.manchester.ac.uk/"><img src="//humassets.manchester.ac.uk/rwd-assets/images/logo-university-of-manchester.png" alt="The University of Manchester" width="206" height="86" /></a>                    </div>            
+                    <!--Mobile Menu Icon-->
+                                      
+                    <!--<a class="mobile-menu-icon" href="#"><img src="/media/humanities/humrwd/assets/images/icon-menu-25x20.gif" alt="" style="width: 25px; height: 20px;" class="" /></a>-->
+                                      <a class="mobile-menu-icon" href="#"><img src="/media/humanities/humrwd/assets/images/icon-menu-25x20-25x20.gif" alt="" style="width: 25px; height: 20px;" class="" /></a>
+                                  
+                    <!--<a class="search-icon"><img src="/media/humanities/humrwd/assets/images/icon-search-mobile-20x20.gif" alt="" style="width: 20px; height: 20px;" class="" /><span>Search</span></a>-->
+                                      <a class="search-icon"><img src="/media/humanities/humrwd/assets/images/icon-search-mobile-20x20-20x21.gif" alt="" style="width: 20px; height: 21px;" class="" /><span>Search</span></a>
+                    <div class="search-options">                        
+                        <div class="row">
+
+                            <div class="searchContainer">
+                                                          <!-- navigation object : Search -->                                                          
+                                                                                                                                                    <form method="get" action="/search/" class="autocomplete gsa-autocomplete">
+                                    <div class="searchInputWrapper">
+                                        <label for="searchBox" class="offScreen">Search text</label>
+                                        <input type="text" id="searchBox" name="q" class="q" value="" placeholder="Search the website" />
+                                        <!--<input type="hidden" name="site" value="University" class="site" />
+                                        <input type="hidden" name="client" value="MAN_aboutus_search" class="client" />-->
+                                                                          <input type="hidden" name="site" value="DigitalHumanities" class="site" />                                                                          <input type="hidden" name="client" value="DigitalHumanities" class="client" />                                    </div>
+                                    <div class="searchFilterWrapper">
+                                        <fieldset>
+                                            <legend class="screenreader">Search type</legend>
+                                            <label for="webFilter" class="label"><input type="radio" id="webFilter" name="searchFilter" class="searchFilter" value="website" checked="checked" />Website</label>
+                                            <label for="staffFilter" class="label"><input type="radio" id="staffFilter" name="searchFilter" class="searchFilter" value="staff" />Staff directory</label>
+                                        </fieldset>
+                                    </div>
+                                                                        <input type="submit" value="Search" />
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>                    
+                    <div class="site-identifier">                        <p class=""><!-- navigation object : Section title -->Digital Humanities</p>
+                    </div>                
+                </div>
+                <div class="primaryNav-container">
+                                  <!--BEGIN Primary Nav-->
+                                  <nav class="primaryNav">
+                                  
+                                  <ul class="megaMenu clickOut clearfix">
+                                  <li class="menuItem"><a class="home" href="/">Home</a></li>
+<li class="menuItem">
+<a class="megaLink"  href="/about/">About</a>
+</li>
+<li class="menuItem">
+<a class="megaLink"  href="/research/">Research</a>
+</li>
+<li class="menuItem">
+<a class="megaLink"  href="/events/">Events</a>
+</li>
+<li class="menuItem">
+<a class="megaLink"  href="/people/">People</a>
+</li>
+<li class="menuItem">
+<a class="megaLink"  href="/community/">Community</a>
+</li>
+                                      </ul>
+                                  </nav>
+                                  <!--END Primary Nav-->                    
+                </div>
+                <!--END Header Content-->                
+            </header>
+            <!--END Header Container-->
+

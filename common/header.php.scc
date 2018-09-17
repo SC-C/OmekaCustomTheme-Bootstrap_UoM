@@ -188,14 +188,19 @@
                                   <ul class="megaMenu clickOut clearfix">
                                   <li class="menuItem"><a class="home" href="/">Home</a></li>
 <li class="menuItem">
+<a class="megaLink"  href="/about/">About</a>
 </li>
 <li class="menuItem">
+<a class="megaLink"  href="/research/">Research</a>
 </li>
 <li class="menuItem">
+<a class="megaLink"  href="/events/">Events</a>
 </li>
 <li class="menuItem">
+<a class="megaLink"  href="/people/">People</a>
 </li>
 <li class="menuItem">
+<a class="megaLink"  href="/community/">Community</a>
 </li>
                                       </ul>
                                   </nav>

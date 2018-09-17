@@ -1,0 +1,16 @@
+               .footerContainer h2                                                     {color:white}
+                .footerContainer .fourcol.last                          {margin:2em 0 0; padding:1em 0 0; border-top:1px solid #808184; width:100%}
+                .footerContainer .sixcol.last                           {margin:2em 0 0; padding:1em 0 0; border-top:1px solid #808184; width:100%}
+                .footerContainer .tripleVertPadding                     {padding-bottom:1em}
+                .footerContainer li a                                           {color:#aaa;}
+                .footerContainer a:hover                                        {text-decoration:underline}
+                .footerContainer .inlineList li                         {font-size:1.076923em!important}
+                .footerContainer address                                        {font-size:1.230769em;}
+                .footerContainer address a                                      {color:#aaa;}
+
+                .footer-socialIcons     li                                              {padding:0!important}
+                .footer-socialIcons     li a img                                {margin:0 3px 0 0; width:auto!important;}
+
+                .footerLogos                                                            {float:left;}
+                .footerLogos img                                                        {display:inline; margin:0 20px 10px 0; width:auto!important;}
+                .footerLogos p                                                          {color:white; line-height:1.3em; font-size:1.1em; clear:both;} 

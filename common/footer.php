@@ -1,33 +1,56 @@
         </div><!-- end content -->
-        <footer>
-            <div class="row">
-                <div id="footer-text" class="col-sm-9">
-                    <?php if ( $footerText = get_theme_option('Footer Text') ): ?>
-                    <p><?php echo $footerText; ?></p>
-                    <?php endif; ?>
+
+<?php queue_css_file('uom_footer'); ?>
+
+<footer class="footerContainer">
+<div class="row tripleVertPadding">
+<div class="fourcol halfSizeUntilLargeMobile">
+<h2 class="h2Small">Contacts</h2>
+<ul class="noBullets">
+<li><a href="tel:+441613066000">+44 (0)161 306 6000</a></li>
+<!-- navigation object : Footer contact details (Hum-RWD) --><li><a href="/connect/contact-us/">Contact details</a></li>
+<!-- navigation object : Additional contact finder -->
+<!-- navigation object : Additional footer link -->
+</ul>
+</div>
+<div class="fourcol halfSizeUntilLargeMobile lastAtMobile">
+<h2 class="h2Small">Find us</h2>
+<address><a href="http://www.manchester.ac.uk/discover/maps/interactive-map/">The University of Manchester<br>Oxford Rd<br>Manchester<br>M13 9PL<br>UK</a></address>
+</div>
+<div class="fourcol last">
+                                              <h2 class="h2Small">Connect with us</h2>
+                        <ul class="inlineList footer-socialIcons">
+
+
+
+
+                        </ul>
+                                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-9">
-                    <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
-                        <p><?php echo $copyright; ?></p>
-                    <?php endif; ?>
+                          <hr />
+                <div class="row singleVertPadding">
+                    <div class="twelvecol">
+                        <ul class="inlineList">
+                           <li><a href="https://www.manchester.ac.uk/discover/privacy-information/data-protection/">Data protection</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/copyright/">Copyright notice</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/accessibility/">Accessibility</a> /</li>
+                            <li><a href="https://www.manchester.ac.uk/discover/privacy-information/freedom-information/">Freedom of information</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/discover/governance/charitable-status/">Charitable status</a> /</li>
+                            <li><span>Royal Charter Number: RC000797</span></li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <p class="omeka-props-footer text-right"><?php echo __('Proudly powered by <a href="https://omeka.org">Omeka</a>.'); ?></p>
-                </div>
-            </div>
-            <div>
-                <?php fire_plugin_hook('public_footer'); ?>
-            </div>
-        </footer>
+            </footer>
+            <!--END Footer Container-->
+        </div>
 </div><!--end wrap-->
 
     <?php
     // Omeka 2.4 and Bootstrap 3.3.7 use the same jQuery (1.12), so it is not
     // recalled.
     ?>
-    <?php if (get_theme_option('Use Internal Bootstrap')) :?>
+    <?php if (get_theme_option('Use Internal Bootstrap')) :?>  
     <script src="<?php echo src('bootstrap.min', 'javascripts', 'js'); ?>"></script>
     <?php else: ?>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

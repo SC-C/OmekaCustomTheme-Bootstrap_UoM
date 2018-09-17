@@ -34,7 +34,7 @@
     queue_css_file('bootstrap.min');
     queue_css_file('font-awesome.min');
     queue_css_file('global-mhs');
-?>
+    ?>
     <style>
         body {
             color: <?php echo $textColor; ?>;
@@ -112,6 +112,10 @@
        queue_css_file('style');
     } 
     
+    $displayCornerBanner = get_theme_option('Display Corner Banner');
+    if ($displayCornerBanner) {
+        queue_css_file('corner-banner');
+    }
      
     if (get_theme_option('Display Grid Rotator') && is_current_url('/')):
         queue_css_file('grid-rotator-style');
@@ -139,73 +143,27 @@
     <!-- <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a> -->
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
 
-
-            <!--Header Container-->
-            <header class="headerContainer">
-                <!--Header Content-->
-                              <div class="headerContent clearfix ">
-                    <div class="mainLogo">
-                    <a href="http://www.manchester.ac.uk/"><img src="//humassets.manchester.ac.uk/rwd-assets/images/logo-university-of-manchester.png" alt="The University of Manchester" width="206"$
-                    <!--Mobile Menu Icon-->
-
-                    <!--<a class="mobile-menu-icon" href="#"><img src="/media/humanities/humrwd/assets/images/icon-menu-25x20.gif" alt="" style="width: 25px; height: 20px;" class="" /></a>-->
-                                      <a class="mobile-menu-icon" href="#"><img src="/media/humanities/humrwd/assets/images/icon-menu-25x20-25x20.gif" alt="" style="width: 25px; height: 20px;" clas$
-
-                    <!--<a class="search-icon"><img src="/media/humanities/humrwd/assets/images/icon-search-mobile-20x20.gif" alt="" style="width: 20px; height: 20px;" class="" /><span>Search</span$
-                                      <a class="search-icon"><img src="/media/humanities/humrwd/assets/images/icon-search-mobile-20x20-20x21.gif" alt="" style="width: 20px; height: 21px;" class="" $
-                    <div class="search-options">
-                        <div class="row">
-
-                            <div class="searchContainer">
-                                                          <!-- navigation object : Search -->
-                                                                                                                                                    <form method="get" action="/search/" class="autoc$
-                                    <div class="searchInputWrapper">
-                                        <label for="searchBox" class="offScreen">Search text</label>
-                                        <input type="text" id="searchBox" name="q" class="q" value="" placeholder="Search the website" />
-                                        <!--<input type="hidden" name="site" value="University" class="site" />
-                                        <input type="hidden" name="client" value="MAN_aboutus_search" class="client" />-->
-                                                                          <input type="hidden" name="site" value="DigitalHumanities" class="site" />                                                 $
-                                    <div class="searchFilterWrapper">
-                                        <fieldset>
-                                            <legend class="screenreader">Search type</legend>
-                                            <label for="webFilter" class="label"><input type="radio" id="webFilter" name="searchFilter" class="searchFilter" value="website" checked="checked" />Webs$
-                                            <label for="staffFilter" class="label"><input type="radio" id="staffFilter" name="searchFilter" class="searchFilter" value="staff" />Staff directory</lab$
-                                        </fieldset>
-                                    </div>
-                                                                        <input type="submit" value="Search" />
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="site-identifier">                        <p class=""><!-- navigation object : Section title -->Digital Humanities</p>
-                    </div>
+    <?php if ($displayCornerBanner): ?>
+    <span id="corner-banner">
+       <em><?php echo $displayCornerBanner; ?></em>
+    </span>
+    <?php endif; ?>
+    <header id="header" role="banner" class="container">
+        <div class="row">
+            <div id="site-title" class="col-sm-6">
+                <div class="logoimg">
+                    <h1><?php echo link_to_home_page(str_replace('>', ' class="img-responsive">', theme_logo())); ?></h1>
                 </div>
-                <div class="primaryNav-container">
-                                  <!--BEGIN Primary Nav-->
-                                  <nav class="primaryNav">
-
-                                  <ul class="megaMenu clickOut clearfix">
-                                  <li class="menuItem"><a class="home" href="/">Home</a></li>
-<li class="menuItem">
-</li>
-<li class="menuItem">
-</li>
-<li class="menuItem">
-</li>
-<li class="menuItem">
-</li>
-<li class="menuItem">
-</li>
-                                      </ul>
-                                  </nav>
-                                  <!--END Primary Nav-->
-                </div>
-                <!--END Header Content-->
-            </header>
-            <!--END Header Container-->
-                                                                         
-
+            </div>
+            <div id="search-container" class="col-sm-6" role="search">
+                <?php echo search_form(array(
+                    'show_advanced' => get_theme_option('Use Advanced Search'),
+                    'submit_value' => __('Search'),
+                    'form_attributes' => array('class' => 'form-search navbar-form navbar-right', 'role' => 'form'))); ?>
+            </div>
+        </div>
+        <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
+    </header>
     <?php // Eventually remove the container to set the menu through screen. ?>
     <div class="container">
     <nav id="nav-wrap" class="navbar navbar-default">

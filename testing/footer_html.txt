@@ -1,0 +1,75 @@
+<!--Footer Container-->
+<footer class="footerContainer">                            
+<div class="row tripleVertPadding">                                                      
+<div class="fourcol halfSizeUntilLargeMobile">                        
+<h2 class="h2Small">Contacts</h2>
+<ul class="noBullets">
+<li><a href="tel:+441613066000">+44 (0)161 306 6000</a></li>
+<!-- navigation object : Footer contact details (Hum-RWD) --><li><a href="/connect/contact-us/">Contact details</a></li>
+<!-- navigation object : Additional contact finder -->
+<!-- navigation object : Additional footer link -->
+</ul>
+</div>                    
+<div class="fourcol halfSizeUntilLargeMobile lastAtMobile">                                                               
+<h2 class="h2Small">Find us</h2>
+<address><a href="http://www.manchester.ac.uk/discover/maps/interactive-map/">The University of Manchester<br>Oxford Rd<br>Manchester<br>M13 9PL<br>UK</a></address>
+</div>                    
+<div class="fourcol last">                                      
+                                              <h2 class="h2Small">Connect with us</h2>                
+                        <ul class="inlineList footer-socialIcons">
+                            
+                                           <!-- navigation object : Footer social media links (RWD) --><li class="facebook"><a href="https://www.facebook.com/hcrinstitute" class="newWindow"><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-facebook-50.png" width="40" height="40" alt="Facebook" /></a></li>
+<li class="twitter"><a href="https://twitter.com/HCRInstitute" class="newWindow"><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-twitter-50.png" width="40" height="40" alt="Twitter" /></a></li>
+<li class="instagram"><a href="https://www.instagram.com/hcrinstitute/" class="newWindow"><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-instagram-50.png" width="40" height="40" alt="Instagram" /></a></li>
+
+<li class="youtube"><a href="https://www.youtube.com/user/HCRInstitute" class="newWindow"><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-youtube-50.png" width="40" height="40" alt="YouTube" /></a></li>
+
+
+
+                        </ul>
+                                    </div>
+                                        <!-- Add footer logo code via navigation object -- AS -->
+                                        <!-- navigation object : Footer logo properties -->
+                                        <!-- End add footer logo code via navigation object -- AS -->
+                </div>                
+                          <hr />                    
+                <div class="row singleVertPadding">
+                    <div class="twelvecol">
+                        <ul class="inlineList">
+                                                      <li><a href="http://www.manchester.ac.uk/disclaimer/">Disclaimer</a> /</li>
+                            <li><a href="https://www.manchester.ac.uk/discover/privacy-information/data-protection/">Data protection</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/copyright/">Copyright notice</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/accessibility/">Accessibility</a> /</li>
+                            <li><a href="https://www.manchester.ac.uk/discover/privacy-information/freedom-information/">Freedom of information</a> /</li>
+                            <li><a href="http://www.manchester.ac.uk/discover/governance/charitable-status/">Charitable status</a> /</li>
+                            <li><span>Royal Charter Number: RC000797</span></li>
+                        </ul>
+
+                    </div>
+                </div>                
+            </footer>
+            <!--END Footer Container-->            
+        </div>
+
+______________________________________
+
+css:
+
+/* Footer */
+                .footerContainer h2                                                     {color:white}
+                .footerContainer .fourcol.last                          {margin:2em 0 0; padding:1em 0 0; border-top:1px solid #808184; width:100%}
+                .footerContainer .sixcol.last                           {margin:2em 0 0; padding:1em 0 0; border-top:1px solid #808184; width:100%}
+                .footerContainer .tripleVertPadding                     {padding-bottom:1em}
+                .footerContainer li a                                           {color:#aaa;}
+                .footerContainer a:hover                                        {text-decoration:underline}
+                .footerContainer .inlineList li                         {font-size:1.076923em!important}
+                .footerContainer address                                        {font-size:1.230769em;}
+                .footerContainer address a                                      {color:#aaa;}
+
+                .footer-socialIcons     li                                              {padding:0!important}
+                .footer-socialIcons     li a img                                {margin:0 3px 0 0; width:auto!important;}
+
+                .footerLogos                                                            {float:left;}
+                .footerLogos img                                                        {display:inline; margin:0 20px 10px 0; width:auto!important;}
+                .footerLogos p                                                          {color:white; line-height:1.3em; font-size:1.1em; clear:both;}
+
